@@ -981,7 +981,7 @@ class compression:
                         numbers = []
 
                         
-                        if namezD>=17 and and namezD<=99:
+                        if namezD>=17 and namezD<=99:
                                     blockDR=(8*1024*1024)//32*10    
                         
                         blockD=(blockDR*namezD)-1
