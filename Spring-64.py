@@ -117,6 +117,10 @@ class compression:
                             nameas=nameas[0:nac-10]
 
 
+                            
+                        if namezD>99:
+                            raise SystemExit
+
                         if namezD==32:
 
                                 blockDR=200010
@@ -706,6 +710,9 @@ class compression:
                     if namez=="c2":
 
                         namezD = int(input("Please, enter Deep? "))
+
+                        if namezD>99:
+                            raise SystemExit
 
                         if namezD==27:
                             namezD=32
