@@ -298,6 +298,8 @@ class compression:
                         qtqweqw=""
                         numberschangenotexist = []
                         numbers = []
+
+                        
                        
             
                         with open(nameas, "w") as f4:
@@ -388,7 +390,8 @@ class compression:
                                 countraz=0
 
 
-                                
+                                if namezD>=17:
+                                    blockDR=(8*1024*1024)//32*10
                                     
                                 blockD=(blockDR*namezD)
                                 blockDE=(blockDR*namezD)-1
@@ -978,7 +981,8 @@ class compression:
                         numbers = []
 
                         
-                            
+                        if namezD>=17:
+                                    blockDR=(8*1024*1024)//32*10    
                         
                         blockD=(blockDR*namezD)-1
                         block=blockDR
