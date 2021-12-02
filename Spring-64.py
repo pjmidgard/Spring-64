@@ -108,9 +108,31 @@ class compression:
                             namezD=int(nameas[nac-9:nac-8])
                             nameas=nameas[0:nac-9]
 
-                        elif nameas[nac-9:nac]=="9.bin.bin" and nameas[nac-10:nac]!="19.bin.bin":
+                        elif nameas[nac-9:nac]=="6.bin.bin" and nameas[nac-10:nac]!="16.bin.bin":
                             namezD=int(nameas[nac-9:nac-8])
                             nameas=nameas[0:nac-9]
+
+                        elif nameas[nac-9:nac]=="5.bin.bin" and nameas[nac-10:nac]!="15.bin.bin":
+                            namezD=int(nameas[nac-9:nac-8])
+                            nameas=nameas[0:nac-9]
+
+
+                        elif nameas[nac-9:nac]=="4.bin.bin" and nameas[nac-10:nac]!="14.bin.bin":
+                            namezD=int(nameas[nac-9:nac-8])
+                            nameas=nameas[0:nac-9]
+
+                        elif nameas[nac-9:nac]=="3.bin.bin" and nameas[nac-10:nac]!="13.bin.bin":
+                            namezD=int(nameas[nac-9:nac-8])
+                            nameas=nameas[0:nac-9]
+
+                        elif nameas[nac-9:nac]=="2.bin.bin" and nameas[nac-10:nac]!="12.bin.bin":
+                            namezD=int(nameas[nac-9:nac-8])
+                            nameas=nameas[0:nac-9]
+
+                        elif nameas[nac-9:nac]=="1.bin.bin" and nameas[nac-10:nac]!="11.bin.bin":
+                            namezD=int(nameas[nac-9:nac-8])
+                            nameas=nameas[0:nac-9]
+
 
                         else:
                             namezD=int(nameas[nac-10:nac-8])
@@ -119,6 +141,9 @@ class compression:
 
                             
                         if namezD>99:
+                            raise SystemExit
+
+                        if namezD<=6:
                             raise SystemExit
 
                         if namezD==32:
@@ -236,7 +261,11 @@ class compression:
 
                         elif namezD==7:
                             
-                                blockDR=500
+                                blockDR=100
+
+
+                          
+                        
                         #print(namezD)
                         
 
@@ -394,42 +423,8 @@ class compression:
                                 countraz=0
 
 
-                                if namezD>=17 and namezD<=23:
-                                    blockDR=700000    
-                                if namezD>=24 and namezD<=28:
-                                    blockDR=7000000
-                                if namezD>=29 and namezD<=33:
-                                    blockDR=70000000
-                                if namezD>=34 and namezD<=38:
-                                    blockDR=700000000
-                                if namezD>=39 and namezD<=43:
-                                    blockDR=7000000000
-                                if namezD>=44 and namezD<=48:
-                                    blockDR=70000000000          
-                                if namezD>=49 and namezD<=53:
-                                    blockDR=700000000000
-
-                                if namezD>=54 and namezD<=58:
-                                    blockDR=7000000000000
-                        
-                                if namezD>=59 and namezD<=63:
-                                    blockDR=70000000000000
-                        
-                                if namezD>=64 and namezD<=68:
-                                    blockDR=700000000000000
-                        
-                                if namezD>=69 and namezD<=73:
-                                    blockDR=7000000000000000
-                                if namezD>=74 and namezD<=78:
-                                    blockDR=70000000000000000
-                                if namezD>=79 and namezD<=83:
-                                    blockDR=700000000000000000
-                                if namezD>=84 and namezD<=88:
-                                    blockDR=7000000000000000000
-                                if namezD>=89 and namezD<=93:
-                                    blockDR=70000000000000000000
-                                if namezD>=94 and namezD<=99:
-                                    blockDR=700000000000000000000
+                                if namezD>=17 and namezD<=99:
+                                    blockDR=(8*1024*1024)//32*10
                                     
                                 blockD=(blockDR*namezD)
                                 blockDE=(blockDR*namezD)-1
@@ -748,90 +743,9 @@ class compression:
                         if namezD>99:
                             raise SystemExit
 
-                        if namezD==27:
-                            namezD=32
+                        if namezD<=6:
+                            raise SystemExit
 
-                        if namezD==26:
-                            namezD=31
-
-                        if namezD==25:
-                            namezD=30
-
-                        if namezD==24:
-                            namezD=29
-
-                        if namezD==23:
-                            namezD=28
-
-                        if namezD==22:
-                            namezD=27
-                        
-                        if namezD==21:
-                            namezD=26
-
-                        if namezD==20:
-                            namezD=25
-
-                        if namezD==18:
-                            namezD=24
-
-                        if namezD==17:
-                            namezD=23
-
-                        if namezD==16:
-                            namezD=22
-
-                        if namezD==15:
-                            namezD=21
-
-                        if namezD==14:
-                            namezD=20
-
-                        if namezD==13:
-                            namezD=19
-                        
-                        if namezD==12:
-                            namezD=18
-
-                        if namezD==11:
-                            namezD=17
-
-                        if namezD==10:
-                            namezD=16
-
-                        if namezD==9:
-                            namezD=15
-
-                        if namezD==8:
-                            namezD=14
-
-                        if namezD==7:
-                            namezD=13
-
-
-                        if namezD==6:
-                            namezD=12
-
-                        if namezD==5:
-                            namezD=11
-
-
-                        if namezD==4:
-                            namezD=10
-
-
-                        if namezD==3:
-                            namezD=9
-
-
-                        if namezD==2:
-                            namezD=8
-
-                        if namezD==1:
-                            namezD=7
-
-                       
-                            
                         if namezD==32:
 
                                 blockDR=200010
@@ -947,7 +861,9 @@ class compression:
 
                         elif namezD==7:
                             
-                                blockDR=500
+                                blockDR=100
+
+                        
 
 
                         else:
@@ -1022,43 +938,9 @@ class compression:
                         numbers = []
 
                         
-                        if namezD>=17 and namezD<=23:
-                                    blockDR=700000    
-                        if namezD>=24 and namezD<=28:
-                                    blockDR=7000000
-                        if namezD>=29 and namezD<=33:
-                                    blockDR=70000000
-                        if namezD>=34 and namezD<=38:
-                                    blockDR=700000000
-                        if namezD>=39 and namezD<=43:
-                                    blockDR=7000000000
-                        if namezD>=44 and namezD<=48:
-                                    blockDR=70000000000          
-                        if namezD>=49 and namezD<=53:
-                                    blockDR=700000000000
-
-                        if namezD>=54 and namezD<=58:
-                                    blockDR=7000000000000
+                        if namezD>=17 and namezD<=99:
+                                    blockDR=(8*1024*1024)//32*10    
                         
-                        if namezD>=59 and namezD<=63:
-                                    blockDR=70000000000000
-                        
-                        if namezD>=64 and namezD<=68:
-                                    blockDR=700000000000000
-                        
-                        if namezD>=69 and namezD<=73:
-                                    blockDR=7000000000000000
-                        if namezD>=74 and namezD<=78:
-                                    blockDR=70000000000000000
-                        if namezD>=79 and namezD<=83:
-                                    blockDR=700000000000000000
-                        if namezD>=84 and namezD<=88:
-                                    blockDR=7000000000000000000
-                        if namezD>=89 and namezD<=93:
-                                    blockDR=70000000000000000000
-                        if namezD>=94 and namezD<=99:
-                                    blockDR=700000000000000000000
-
                         blockD=(blockDR*namezD)-1
                         block=blockDR
                         blockw=block-1
@@ -1314,6 +1196,27 @@ class compression:
                                                 bnkw=bnkw-1
                                             
                                                 cvz=cvz+ghjd
+
+                                        if cvz==0:
+                                             wer="01111111"+sda
+                                             lenf=len(wer)
+                                              
+                                             lenf=len(szx)                      
+                                             szx=""        
+                                             wer="0b"+wer
+                                             n = int(wer, 2)
+                                             qqwslenf=len(wer)
+                                             qqwslenf=(qqwslenf/8)*2
+                                             qqwslenf=str(qqwslenf)
+                                             qqwslenf="%0"+qqwslenf+"x"
+                                             jl=binascii.unhexlify(qqwslenf % n)
+                                             sssssw=len(jl)
+                                             with open(namea, "ab") as f2ww:             
+                                                f2ww.write(jl)
+                                                        
+                                                x2 = time()
+                                                x3 = x2-x
+                                                return print(x3)
                                                 
                                                 
                                         if virationc==byteb:
@@ -1360,8 +1263,8 @@ class compression:
                                     
                                     
                                     lenf=len(szxw3)
-                                    #print(lenf)
-                                    #print(blockD)
+                                    print(lenf)
+                                    print(blockD)
                                    
                                     if lenf>blockD:
                                             wer="01111111"+sda
