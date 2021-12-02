@@ -463,7 +463,7 @@ class compression:
                                             n = int(wer, 2)
                                     
                                             qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf/8)*2
+                                            qqwslenf=(qqwslenf//8)*2
                                             qqwslenf=str(qqwslenf)
                                             qqwslenf="%0"+qqwslenf+"x"
                                                 
@@ -1154,6 +1154,32 @@ class compression:
                                 a=a+1
                                 h=h+1  
                             av=bin(aqwq)
+
+                            takebit=qwaw
+                            takebitdw=int(takebit, 2)
+                            if takebitdw==0:
+                                            
+                                            wer="01111111"+sda
+                                            lenf=len(wer)
+                                      
+                                            lenf=len(szx)                      
+                                            szx=""        
+                                            wer="0b"+wer
+                                            n = int(wer, 2)
+                                            qqwslenf=len(wer)
+                                            qqwslenf=(qqwslenf//8)*2
+                                            qqwslenf=str(qqwslenf)
+                                            qqwslenf="%0"+qqwslenf+"x"
+                                            jl=binascii.unhexlify(qqwslenf % n)
+                                            sssssw=len(jl)
+                                            with open(namea, "ab") as f2ww:             
+                                                f2ww.write(jl)
+                                                
+                                                x2 = time()
+                                                x3 = x2-x
+                                                return print(x3)
+
+                            
                             if a<=block and aqwer==bitc:
                                 aqwer=0
                                 m[aqwq] = aqwq
@@ -1166,6 +1192,8 @@ class compression:
                                         k.append(p)     
                                     p=p+1
                                 lenfg=len(k)
+
+                                
                                 
                                 if lenfg==0:
                                     xx=0
@@ -1215,7 +1243,7 @@ class compression:
                                         wer="0b"+wer
                                         n = int(wer, 2)
                                         qqwslenf=len(wer)
-                                        qqwslenf=(qqwslenf/8)*2
+                                        qqwslenf=(qqwslenf//8)*2
                                         qqwslenf=str(qqwslenf)
                                         qqwslenf="%0"+qqwslenf+"x"
                                         jl=binascii.unhexlify(qqwslenf % n)
@@ -1263,7 +1291,7 @@ class compression:
                                             wer="0b"+wer
                                             n = int(wer, 2)
                                             qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf/8)*2
+                                            qqwslenf=(qqwslenf//8)*2
                                             qqwslenf=str(qqwslenf)
                                             qqwslenf="%0"+qqwslenf+"x"
                                             jl=binascii.unhexlify(qqwslenf % n)
@@ -1329,7 +1357,7 @@ class compression:
                                                     wer="0b"+wer
                                                     n = int(wer, 2)
                                                     qqwslenf=len(wer)
-                                                    qqwslenf=(qqwslenf/8)*2
+                                                    qqwslenf=(qqwslenf//8)*2
                                                     qqwslenf=str(qqwslenf)
                                                     qqwslenf="%0"+qqwslenf+"x"
                                                     jl=binascii.unhexlify(qqwslenf % n)
@@ -1353,36 +1381,16 @@ class compression:
                                                 
                                     
                                         
-                                        
+                                
+                                 
+
+                                    
                                     szxw2=""
                                     cvz2=cvz
                                     cvz5=cvz
                                     szxw3=bin(cvz)[2:]
                                     lenf=len(szxw3)
 
-
-                                    if cvz==0:
-                                            wer="01111111"+sda
-                                            lenf=len(wer)
-                                      
-                                            lenf=len(szx)                      
-                                            szx=""        
-                                            wer="0b"+wer
-                                            n = int(wer, 2)
-                                            qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf/8)*2
-                                            qqwslenf=str(qqwslenf)
-                                            qqwslenf="%0"+qqwslenf+"x"
-                                            jl=binascii.unhexlify(qqwslenf % n)
-                                            sssssw=len(jl)
-                                            with open(namea, "ab") as f2ww:             
-                                                f2ww.write(jl)
-                                                
-                                                x2 = time()
-                                                x3 = x2-x
-                                                return print(x3)
-                                    
-                                    
                                     lenf=len(szxw3)
                                     #print(lenf)
                                     #print(blockD)
@@ -1396,7 +1404,7 @@ class compression:
                                             wer="0b"+wer
                                             n = int(wer, 2)
                                             qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf/8)*2
+                                            qqwslenf=(qqwslenf//8)*2
                                             qqwslenf=str(qqwslenf)
                                             qqwslenf="%0"+qqwslenf+"x"
                                             jl=binascii.unhexlify(qqwslenf % n)
@@ -1610,7 +1618,7 @@ class compression:
                                     n = int(sda2, 2)
                                 
                                     qqwslenf=len(sda2)
-                                    qqwslenf=(qqwslenf/8)*2
+                                    qqwslenf=(qqwslenf//8)*2
                                     qqwslenf=str(qqwslenf)
                                     qqwslenf="%0"+qqwslenf+"x"
                              
@@ -1927,7 +1935,7 @@ class compression:
                                        
                                          n = int(sda17, 2)
                                          qqwslenf=len(sda17)
-                                         qqwslenf=(qqwslenf/8)*2
+                                         qqwslenf=(qqwslenf//8)*2
                                          qqwslenf=str(qqwslenf)
                                          qqwslenf="%0"+qqwslenf+"x"
                                          jl=binascii.unhexlify(qqwslenf % n)
