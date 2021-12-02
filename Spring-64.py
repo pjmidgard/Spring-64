@@ -571,27 +571,21 @@ class compression:
                                             
                                             #print(cvz)
                                             cvz2=cvz
+                                            cvz2=float(cvz2)
+                                            cvz=float(cvz)
+                                            cvz5=float(cvz5)
+                                            cvz3=float(cvz3)
+                                            virationc=float(virationc)
                                             while cvz2!=0:
                                                 
                                                 cvz2=cvz//virationc
                                                 
                                                 cvz3=cvz2*virationc
-                                                cvz4=str(cvz2)
+                                                
                                                 
                                                 cvz5=cvz-cvz3
                                                 cvz=cvz2
-                                                #print(cvz5)
-                                                
-                                               
-                                              
-                                                szxw2=szxw2+cvz4
-                                                
-                                                
-                                                        
-                                                        
-                                                        
-                                                #print(cvz5)     
-                                                
+                                      
                                                 szxw3=bin(cvz5)[2:]
                                                 lenf=len(szxw3)
 
@@ -1209,6 +1203,14 @@ class compression:
 
                                     ghjd=0
                                     cvz=0
+                                    
+                                    ghj=float(ghj)     
+                                    varitionc=float(varitionc)       
+                                    ghjd=float(ghjd)
+                                    bnkw=float(ghj)
+                                    cvz=float(cvz)
+                                                             
+                           
                                     for p in range(blockw+1):
                                         
                                         if virationc!=byteb:
@@ -1221,13 +1223,9 @@ class compression:
                                             
                                                 bnkd=1        
                                             
-                                             
-                                             
-                                                    
-                                            
                                                 ghjd=ghj*(virationc**bnkw)
-                                              
-                                          
+                             
+                                    
                                                 bnkw=bnkw-1
                                             
                                                 cvz=cvz+ghjd
