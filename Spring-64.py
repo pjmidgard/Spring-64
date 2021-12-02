@@ -1257,8 +1257,7 @@ class compression:
                                                         return print(x3)
                                                     
                                     szxw2=""
-                                    cvz2=cvz
-                                    cvz5=cvz
+                                   
                                     szxw3=bin(cvz)[2:]
                                     lenf=len(szxw3)
 
