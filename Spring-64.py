@@ -392,45 +392,45 @@ class compression:
                                 rr12=0
                                 wers=""
                                 countraz=0
-
-
+          
                                 if namezD>=17 and namezD<=23:
-                                    blockDR=700000    
+                                            blockDR=70000 
                                 if namezD>=24 and namezD<=28:
-                                    blockDR=7000000
+                                            blockDR=700000
                                 if namezD>=29 and namezD<=33:
-                                    blockDR=70000000
+                                            blockDR=7000000
                                 if namezD>=34 and namezD<=38:
-                                    blockDR=700000000
+                                            blockDR=70000000
                                 if namezD>=39 and namezD<=43:
-                                    blockDR=7000000000
+                                            blockDR=700000000
                                 if namezD>=44 and namezD<=48:
-                                    blockDR=70000000000          
+                                            blockDR=7000000000          
                                 if namezD>=49 and namezD<=53:
-                                    blockDR=700000000000
+                                            blockDR=70000000000
 
                                 if namezD>=54 and namezD<=58:
-                                    blockDR=7000000000000
-                        
+                                            blockDR=700000000000
+                                
                                 if namezD>=59 and namezD<=63:
-                                    blockDR=70000000000000
-                        
+                                            blockDR=7000000000000
+                                
                                 if namezD>=64 and namezD<=68:
-                                    blockDR=700000000000000
-                        
+                                            blockDR=70000000000000
+                                
                                 if namezD>=69 and namezD<=73:
-                                    blockDR=7000000000000000
+                                            blockDR=700000000000000
                                 if namezD>=74 and namezD<=78:
-                                    blockDR=70000000000000000
+                                            blockDR=7000000000000000
                                 if namezD>=79 and namezD<=83:
-                                    blockDR=700000000000000000
+                                            blockDR=70000000000000000
                                 if namezD>=84 and namezD<=88:
-                                    blockDR=7000000000000000000
+                                            blockDR=700000000000000000
                                 if namezD>=89 and namezD<=93:
-                                    blockDR=70000000000000000000
+                                            blockDR=7000000000000000000
                                 if namezD>=94 and namezD<=99:
-                                    blockDR=700000000000000000000
-                                    
+                                            blockDR=70000000000000000000
+                                          
+                                            
                                 blockD=(blockDR*namezD)
                                 blockDE=(blockDR*namezD)-1
                                 BlockF=blockDR
@@ -1023,41 +1023,41 @@ class compression:
 
                         
                         if namezD>=17 and namezD<=23:
-                                    blockDR=700000    
+                                    blockDR=70000 
                         if namezD>=24 and namezD<=28:
-                                    blockDR=7000000
+                                    blockDR=700000
                         if namezD>=29 and namezD<=33:
-                                    blockDR=70000000
+                                    blockDR=7000000
                         if namezD>=34 and namezD<=38:
-                                    blockDR=700000000
+                                    blockDR=70000000
                         if namezD>=39 and namezD<=43:
-                                    blockDR=7000000000
+                                    blockDR=700000000
                         if namezD>=44 and namezD<=48:
-                                    blockDR=70000000000          
+                                    blockDR=7000000000          
                         if namezD>=49 and namezD<=53:
-                                    blockDR=700000000000
+                                    blockDR=70000000000
 
                         if namezD>=54 and namezD<=58:
-                                    blockDR=7000000000000
+                                    blockDR=700000000000
                         
                         if namezD>=59 and namezD<=63:
-                                    blockDR=70000000000000
+                                    blockDR=7000000000000
                         
                         if namezD>=64 and namezD<=68:
-                                    blockDR=700000000000000
+                                    blockDR=70000000000000
                         
                         if namezD>=69 and namezD<=73:
-                                    blockDR=7000000000000000
+                                    blockDR=700000000000000
                         if namezD>=74 and namezD<=78:
-                                    blockDR=70000000000000000
+                                    blockDR=7000000000000000
                         if namezD>=79 and namezD<=83:
-                                    blockDR=700000000000000000
+                                    blockDR=70000000000000000
                         if namezD>=84 and namezD<=88:
-                                    blockDR=7000000000000000000
+                                    blockDR=700000000000000000
                         if namezD>=89 and namezD<=93:
-                                    blockDR=70000000000000000000
+                                    blockDR=7000000000000000000
                         if namezD>=94 and namezD<=99:
-                                    blockDR=700000000000000000000
+                                    blockDR=70000000000000000000
 
                         blockD=(blockDR*namezD)-1
                         block=blockDR
@@ -1157,6 +1157,7 @@ class compression:
 
                             takebit=qwaw
                             takebitdw=int(takebit, 2)
+                            
                             if takebitdw==0:
                                             
                                             wer="01111111"+sda
@@ -1369,22 +1370,6 @@ class compression:
                                                         x3 = x2-x
                                                         return print(x3)
                                                     
-
-                                                   
-                                       
-                                                
-
-                                                
-                                                
-                                                
-
-                                                
-                                    
-                                        
-                                
-                                 
-
-                                    
                                     szxw2=""
                                     cvz2=cvz
                                     cvz5=cvz
@@ -1392,8 +1377,7 @@ class compression:
                                     lenf=len(szxw3)
 
                                     lenf=len(szxw3)
-                                    #print(lenf)
-                                    #print(blockD)
+                                    
                                    
                                     if lenf>blockD:
                                             wer="01111111"+sda
