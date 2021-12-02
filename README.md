@@ -13,6 +13,6 @@ It can compress random files. Program compress not any files sometimes the file 
 
 When compress you need enter options for compress.
 
-Deep 7-99.
+Deep 1-99.
 
 Bye, Bye.
