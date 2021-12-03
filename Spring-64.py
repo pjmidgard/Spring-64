@@ -762,7 +762,7 @@ class compression:
                             
                                 blockDR=500
 
-                       if namezD>=17 and namezD<=99:
+                        if namezD>=17 and namezD<=99:
                                     blockDR=(8*1024*1024)//990
                    
 
