@@ -2202,10 +2202,10 @@ class compression:
                                                sda12="00"
 
                                            elif sda12=="11":
-                                               sda12="00"
+                                               sda12="10"
 
-                                           elif sda12=="11":
-                                               sda12="00"
+                                           elif sda12=="10":
+                                               sda12="11"
 
                                            if sda11=="10":
                                                sda11="11"
@@ -2218,6 +2218,7 @@ class compression:
 
                                            elif sda11=="01":
                                                sda11="00"
+
 
                                            sda17=sda17+sda10+sda11+sda12+sda13
                                                
@@ -2300,10 +2301,10 @@ class compression:
                                                sda12="00"
 
                                            elif sda12=="11":
-                                               sda12="00"
+                                               sda12="10"
 
-                                           elif sda12=="11":
-                                               sda12="00"
+                                           elif sda12=="10":
+                                               sda12="11"
 
                                            if sda11=="10":
                                                sda11="11"
