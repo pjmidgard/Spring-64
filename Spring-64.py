@@ -165,43 +165,9 @@ class compression:
                             
                                 blockDR=500
 
-                        if namezD>=17 and namezD<=23:
-                                    blockDR=70000 
-                        if namezD>=24 and namezD<=28:
-                                    blockDR=700000
-                        if namezD>=29 and namezD<=33:
-                                    blockDR=7000000
-                        if namezD>=34 and namezD<=38:
-                                    blockDR=70000000
-                        if namezD>=39 and namezD<=43:
-                                    blockDR=700000000
-                        if namezD>=44 and namezD<=48:
-                                    blockDR=7000000000          
-                        if namezD>=49 and namezD<=53:
-                                    blockDR=70000000000
-
-                        if namezD>=54 and namezD<=58:
-                                    blockDR=700000000000
-                        
-                        if namezD>=59 and namezD<=63:
-                                    blockDR=7000000000000
-                        
-                        if namezD>=64 and namezD<=68:
-                                    blockDR=70000000000000
-                        
-                        if namezD>=69 and namezD<=73:
-                                    blockDR=700000000000000
-                        if namezD>=74 and namezD<=78:
-                                    blockDR=7000000000000000
-                        if namezD>=79 and namezD<=83:
-                                    blockDR=70000000000000000
-                        if namezD>=84 and namezD<=88:
-                                    blockDR=700000000000000000
-                        if namezD>=89 and namezD<=93:
-                                    blockDR=7000000000000000000
-                        if namezD>=94 and namezD<=99:
-                                    blockDR=70000000000000000000
-
+                        if namezD>=17 and namezD<=99:
+                                    blockDR=(8*1024*1024)//990
+                   
 
                        
                         #print(namezD)
@@ -796,42 +762,9 @@ class compression:
                             
                                 blockDR=500
 
-                        if namezD>=17 and namezD<=23:
-                                    blockDR=70000 
-                        if namezD>=24 and namezD<=28:
-                                    blockDR=700000
-                        if namezD>=29 and namezD<=33:
-                                    blockDR=7000000
-                        if namezD>=34 and namezD<=38:
-                                    blockDR=70000000
-                        if namezD>=39 and namezD<=43:
-                                    blockDR=700000000
-                        if namezD>=44 and namezD<=48:
-                                    blockDR=7000000000          
-                        if namezD>=49 and namezD<=53:
-                                    blockDR=70000000000
-
-                        if namezD>=54 and namezD<=58:
-                                    blockDR=700000000000
-                        
-                        if namezD>=59 and namezD<=63:
-                                    blockDR=7000000000000
-                        
-                        if namezD>=64 and namezD<=68:
-                                    blockDR=70000000000000
-                        
-                        if namezD>=69 and namezD<=73:
-                                    blockDR=700000000000000
-                        if namezD>=74 and namezD<=78:
-                                    blockDR=7000000000000000
-                        if namezD>=79 and namezD<=83:
-                                    blockDR=70000000000000000
-                        if namezD>=84 and namezD<=88:
-                                    blockDR=700000000000000000
-                        if namezD>=89 and namezD<=93:
-                                    blockDR=7000000000000000000
-                        if namezD>=94 and namezD<=99:
-                                    blockDR=70000000000000000000
+                       if namezD>=17 and namezD<=99:
+                                    blockDR=(8*1024*1024)//990
+                   
 
 
                         x=0
