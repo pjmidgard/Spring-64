@@ -838,43 +838,6 @@ class compression:
                                     blockDR=70000000000000000000
 
 
-                       
-                            
-                        if namezD==32:
-
-                                blockDR=200010
-
-                        
-                        elif namezD==31:
-
-                                blockDR=180010
-
-                        elif namezD==30:
-
-                                blockDR=170010
-                                
-                        elif namezD==29:
-
-                                blockDR=160010
-                                
-                        elif namezD==28:
-
-                                blockDR=150010
-
-
-                        elif namezD==27:
-
-                                blockDR=140010
-
-
-                      
-
-                        
-
-                      
-                      
-                            
-
                         x=0
                         x1=0
                         x2=0
