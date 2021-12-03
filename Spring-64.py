@@ -2194,55 +2194,30 @@ class compression:
                                            sda12=sda3[ei+4:ei+6]
                                            sda13=sda3[ei+6:ei+8]
 
+                                        
                                            if sda12=="00":
                                                sda12="01"
 
-                                           if sda12=="01":
-                                               sda12="10"
-
-                                           if sda12=="10":
+                                           elif sda12=="01":
                                                sda12="00"
 
-                                           if sda12=="11":
-                                               sda12="11"
+                                           elif sda12=="11":
+                                               sda12="00"
 
-
-                                           if sda13=="01":
-                                               sda13="10"
-
-                                           if sda13=="00":
-                                               sda13="01"
-
-                                           if sda13=="11":
-                                               sda13="00"
-
-                                           if sda13=="10":
-                                               sda13="11"
-
-                                           if sda10=="00":
-                                               sda10="01"
-
-                                           if sda10=="01":
-                                               sda10="10"
-
-                                           if sda10=="11":
-                                               sda10="00"
-
-                                           if sda10=="10":
-                                               sda10="11"
-
-
-                                           if sda11=="01":
-                                               sda11="10"
-
-                                           if sda11=="00":
-                                               sda11="01"
-
-                                           if sda11=="11":
-                                               sda11="00"
+                                           elif sda12=="11":
+                                               sda12="00"
 
                                            if sda11=="10":
                                                sda11="11"
+
+                                           elif sda11=="11":
+                                               sda11="10"
+
+                                           elif sda11=="00":
+                                               sda11="01"
+
+                                           elif sda11=="01":
+                                               sda11="00"
 
                                            sda17=sda17+sda10+sda11+sda12+sda13
                                                
@@ -2321,52 +2296,26 @@ class compression:
                                            if sda12=="00":
                                                sda12="01"
 
-                                           if sda12=="01":
-                                               sda12="10"
-
-                                           if sda12=="10":
+                                           elif sda12=="01":
                                                sda12="00"
 
-                                           if sda12=="11":
-                                               sda12="11"
+                                           elif sda12=="11":
+                                               sda12="00"
 
-
-                                           if sda13=="01":
-                                               sda13="10"
-
-                                           if sda13=="00":
-                                               sda13="01"
-
-                                           if sda13=="11":
-                                               sda13="00"
-
-                                           if sda13=="10":
-                                               sda13="11"
-
-                                           if sda10=="00":
-                                               sda10="01"
-
-                                           if sda10=="01":
-                                               sda10="10"
-
-                                           if sda10=="11":
-                                               sda10="00"
-
-                                           if sda10=="10":
-                                               sda10="11"
-
-
-                                           if sda11=="01":
-                                               sda11="10"
-
-                                           if sda11=="00":
-                                               sda11="01"
-
-                                           if sda11=="11":
-                                               sda11="00"
+                                           elif sda12=="11":
+                                               sda12="00"
 
                                            if sda11=="10":
                                                sda11="11"
+
+                                           elif sda11=="11":
+                                               sda11="10"
+
+                                           elif sda11=="00":
+                                               sda11="01"
+
+                                           elif sda11=="01":
+                                               sda11="00"
 
                                            sda17=sda17+sda10+sda11+sda12+sda13
                                                
