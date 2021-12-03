@@ -2195,29 +2195,29 @@ class compression:
                                            sda13=sda3[ei+6:ei+8]
 
                                            if sda12=="00":
-                                               sda10="01"
+                                               sda12="01"
 
                                            if sda12=="01":
-                                               sda10="10"
+                                               sda12="10"
 
                                            if sda12=="10":
-                                               sda10="00"
+                                               sda12="00"
 
                                            if sda12=="11":
-                                               sda10="11"
+                                               sda12="11"
 
 
                                            if sda13=="01":
-                                               sda11="10"
+                                               sda13="10"
 
                                            if sda13=="00":
-                                               sda11="01"
+                                               sda13="01"
 
                                            if sda13=="11":
-                                               sda11="00"
+                                               sda13="00"
 
                                            if sda13=="10":
-                                               sda11="11"
+                                               sda13="11"
 
                                            if sda10=="00":
                                                sda10="01"
@@ -2319,29 +2319,29 @@ class compression:
                                            sda13=sda3[ei+6:ei+8]
 
                                            if sda12=="00":
-                                               sda10="01"
+                                               sda12="01"
 
                                            if sda12=="01":
-                                               sda10="10"
+                                               sda12="10"
 
                                            if sda12=="10":
-                                               sda10="00"
+                                               sda12="00"
 
                                            if sda12=="11":
-                                               sda10="11"
+                                               sda12="11"
 
 
                                            if sda13=="01":
-                                               sda11="10"
+                                               sda13="10"
 
                                            if sda13=="00":
-                                               sda11="01"
+                                               sda13="01"
 
                                            if sda13=="11":
-                                               sda11="00"
+                                               sda13="00"
 
                                            if sda13=="10":
-                                               sda11="11"
+                                               sda13="11"
 
                                            if sda10=="00":
                                                sda10="01"
