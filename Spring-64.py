@@ -72,7 +72,7 @@ lenf=0
 name=""
 szx=""
 wer=""
-namez = input("c,c2: compress or e,u2: extract? ")
+namez = input("c,c2,c3: compress or e,u2,e3: extract? ")
 
 f = open("PI_10M.txt", "r")
 PI=f.read()
@@ -166,7 +166,7 @@ class compression:
                                 blockDR=500
 
                         if namezD>=17 and namezD<=20:
-                                    blockDR=100000
+                                    blockDR=300000
                    
 
                        
@@ -763,7 +763,7 @@ class compression:
                                 blockDR=500
 
                         if namezD>=17 and namezD<=20:
-                                    blockDR=100000
+                                    blockDR=300000
                    
 
 
@@ -1931,6 +1931,516 @@ class compression:
                                             return print(x3)
 
 
+    
+    def cryptograpy_compression5(self):
+                
+                self.name = "Written: Jurijus pacalovas Date: 29/09/2021 18:06"
+                
+                if namez=="c3" or namez=="e3":
+                    if namez=="c3":
+                        i=1
+                    if namez=="e3":
+                        i=2
+                    
+                    #import mpmath as m
+                    #m.mp.dps = 100000
+                    #PI=4 * m.atan(1)
+
+                    spin=0
+                    c=0
+                    A=0
+                    Spin=0
+                    sda4=""
+                    sda5=""
+                    sda6=""
+                    e4a=""
+                    e4b=""
+                    ei8=""
+                        
+                    name = input("What is name of file? ")
+                    namem=""
+                    namema="?"
+        
+                    nameas=name
+                    nac=len(nameas)
+
+                    if i==2:
+                        if nameas[nac-4:nac]!=".bin":
+                             print("Program close because this is file is not .bin")
+                             raise SystemExit
+                        
+                        nameas=name[:nac-4]
+                        nac=len(nameas)
+                    
+                    if i==1:
+                        
+                        nameas=name+".bin"
+                    
+                    nac=len(nameas)
+                    
+                    Circle_times3=0
+                    cvf=2
+                    cvf1=0
+                    s=""
+                    
+                    e2=0
+                    e3=1
+                    e4=""
+                    ei4=0
+                    ei5=7
+                    
+                    e4=""
+                    
+                    c=2
+                    sw=2
+                    elw=0
+                 
+                    sda3=""
+                    sda2=""
+
+                    sda5=""
+                    sda6=""
+                    sda7=""
+                    sda8=""
+                    sda9=""
+                    sda11=""
+                    sda12=""
+                    
+                    sda14=""
+                    sdaB=""
+                    D=0
+
+                    block=1
+                    block2=0
+                    block3=0
+                    
+                    count=0
+                    
+                    x=0
+                    x1=0
+                    x2=0
+                    n=0
+                    x = time()
+
+                    with open(nameas, "w") as f4:
+                            f4.write(s)
+                    with open(nameas, "a") as f3:
+                            f3.write(s)
+                    with open(name, "rb") as binary_file:
+
+                       # Read the whole file at once
+                        data = binary_file.read()
+      
+                        s=str(data)
+
+                        lenf1=len(data)
+                        lenf7=len(data)
+                        
+                        END_working=0
+                        Circle_times2=0
+                        ii=0
+                        sda20=""
+                        
+                        while END_working<10:
+                       
+                            Circle_times3=Circle_times3+1
+
+                            with open(nameas, "ab") as f2:
+                                if Circle_times3==1:
+
+                                 
+                                    sda=bin(int(binascii.hexlify(data),16))[2:]
+                                    lenf=len(sda)
+                                    lenf1=len(data)
+                                
+                                    xc=(lenf1*8)-lenf
+                                    z=0
+                                    if xc!=0:
+                                        while z<xc:
+                                            sda="0"+sda
+                                            z=z+1
+                                            
+                                    sda=sda+sda2
+
+                                    if Circle_times3==1:
+                                        sda2=sda
+                            
+                                    n = int(sda2, 2)
+                                
+                                    qqwslenf=len(sda2)
+                                    qqwslenf=(qqwslenf//8)*2
+                                    qqwslenf=str(qqwslenf)
+                                    qqwslenf="%0"+qqwslenf+"x"
+                             
+                                    jl=binascii.unhexlify(qqwslenf % n)
+                                    sssssw=len(jl)
+                                    
+                                    data=jl
+                                  
+                                    lenf5=len(data)
+
+                                    sda=bin(int(binascii.hexlify(data),16))[2:]
+                                    lenf=len(sda)
+
+                                    lenf1=len(data)
+                                
+                                    xc=(lenf1*8)-lenf
+                                    z=0
+                                    if xc!=0:
+                                        while z<xc:
+                                            sda="0"+sda
+                                            z=z+1
+
+                                    sda2=sda
+
+                                    lenf3=len(sda2)
+                                lenf2=len(sda2)
+                                #print(lenf2)
+                                if i==1:
+                                    if lenf7>=(2**32)-1:
+                                        raise SystemExit
+                                        
+                                    if lenf7<=82:
+                                        raise SystemExit 
+                                #########################################################################################################################################################
+                                
+                                block2=0
+                                if i==2:
+
+                                    lenf5=len(sda2)
+
+                                    block2=0
+                                    ei4=0
+                                    ei5=1
+
+                                    
+                                    sda3=sda2
+                                    
+                                    block3=0
+                                    Colaider3=""
+                                   
+                                    lenf5=len(sda3)
+                                    
+                                    
+                                    #Extract
+                                    
+                                    
+                                    s=""
+
+                                    sda3=sda2
+                                    lenf6=len(sda3)
+                                    
+                                    sda4=""
+                                    sda5=""
+                                    sda6=""
+                                    sda7=""
+                                    sda8=""
+                                    sda9=""
+                                    sda17=""
+                                    Bytes_row4=""
+                                    sda19=""
+                                    
+                                    ei=0
+
+                                  
+
+                                    sda3=sda2
+
+                                    lenf6=len(sda3)
+                        
+                                    count_times4=0
+
+                                    FF=len(sda3)
+                                    
+                                    sda17=""
+                                    sda19=""
+                                    
+                                    sda3=sda2
+                                    Spin=0
+                                    lenf6=len(sda3)
+                                    ei4=0
+                                    ei5=20
+                                    block3=0
+                                    Colaider3=""
+                                    block2=0
+                                    block3=0
+
+                                    szx=""
+
+                                    sda6=""
+
+                                    #Compression
+
+                                    sda9=""
+
+                                    sda10=""
+                                    sda11=""
+                                    sda12=""
+                                    sda13=""
+                                    sda17=""
+
+                                    ei=0
+ 
+                                    lenf6F=lenf6
+
+                                    ei=0
+
+                                    Spin=0
+
+                                    while ei<lenf6F:
+   
+                                           sda10=sda3[ei:ei+2]
+                                           sda11=sda3[ei+2:ei+4]
+                                           sda12=sda3[ei+4:ei+6]
+                                           sda13=sda3[ei+6:ei+8]
+
+                                           if sda12=="00":
+                                               sda10="01"
+
+                                           if sda12=="01":
+                                               sda10="10"
+
+                                           if sda12=="10":
+                                               sda10="00"
+
+                                           if sda12=="11":
+                                               sda10="11"
+
+
+                                           if sda13=="01":
+                                               sda11="10"
+
+                                           if sda13=="00":
+                                               sda11="01"
+
+                                           if sda13=="11":
+                                               sda11="00"
+
+                                           if sda13=="10":
+                                               sda11="11"
+
+                                           if sda10=="00":
+                                               sda10="01"
+
+                                           if sda10=="01":
+                                               sda10="10"
+
+                                           if sda10=="11":
+                                               sda10="00"
+
+                                           if sda10=="10":
+                                               sda10="11"
+
+
+                                           if sda11=="01":
+                                               sda11="10"
+
+                                           if sda11=="00":
+                                               sda11="01"
+
+                                           if sda11=="11":
+                                               sda11="00"
+
+                                           if sda11=="10":
+                                               sda11="11"
+
+                                           sda17=sda17+sda10+sda11+sda12+sda13
+                                               
+                                         
+                                           ei=ei+8
+
+                                                         
+
+                                           
+                                           
+                                    sda2=sda17
+                                    Circle_times2=Circle_times2+1
+                                    
+                                    
+                                    if   Circle_times2==1:
+                                         #print(sda17)
+                                       
+                                         n = int(sda17, 2)
+                                         qqwslenf=len(sda17)
+                                         qqwslenf=(qqwslenf//8)*2
+                                         qqwslenf=str(qqwslenf)
+                                         qqwslenf="%0"+qqwslenf+"x"
+                                         jl=binascii.unhexlify(qqwslenf % n)
+                                         sssssw=len(jl)
+
+                                         szxzzza=""
+                                         szxzs=""
+                                            
+                                         f2.write(jl)
+                                         x2 = time()
+                                         x3=x2-x
+                                         return print(x3)
+                                        
+                                if i==1:
+
+                                    sda17=""
+                                    sda19=""
+                                    
+                                    sda3=sda2
+                                    Spin=0
+                                    lenf6=len(sda3)
+                                    ei4=0
+                                    ei5=20
+                                    block3=0
+                                    Colaider3=""
+                                    block2=0
+                                    block3=0
+
+                                    szx=""
+
+                                    sda6=""
+
+                                    #Compression
+
+                                    sda9=""
+
+                                    sda10=""
+                                    sda11=""
+                                    sda12=""
+                                    sda13=""
+
+                                    ei=0
+ 
+                                    lenf6F=lenf6
+
+                                    ei=0
+                                    Spin=0
+
+                                    while ei<lenf6F:
+
+                                           sda10=sda3[ei:ei+2]
+                                           sda11=sda3[ei+2:ei+4]
+                                           sda12=sda3[ei+4:ei+6]
+                                           sda13=sda3[ei+6:ei+8]
+
+                                           if sda12=="00":
+                                               sda10="01"
+
+                                           if sda12=="01":
+                                               sda10="10"
+
+                                           if sda12=="10":
+                                               sda10="00"
+
+                                           if sda12=="11":
+                                               sda10="11"
+
+
+                                           if sda13=="01":
+                                               sda11="10"
+
+                                           if sda13=="00":
+                                               sda11="01"
+
+                                           if sda13=="11":
+                                               sda11="00"
+
+                                           if sda13=="10":
+                                               sda11="11"
+
+                                           if sda10=="00":
+                                               sda10="01"
+
+                                           if sda10=="01":
+                                               sda10="10"
+
+                                           if sda10=="11":
+                                               sda10="00"
+
+                                           if sda10=="10":
+                                               sda10="11"
+
+
+                                           if sda11=="01":
+                                               sda11="10"
+
+                                           if sda11=="00":
+                                               sda11="01"
+
+                                           if sda11=="11":
+                                               sda11="00"
+
+                                           if sda11=="10":
+                                               sda11="11"
+
+                                           sda17=sda17+sda10+sda11+sda12+sda13
+                                               
+                                         
+                                           ei=ei+8
+                                                  
+                                    sda6=sda4
+                                    sda4=""
+                                      
+                                    #####################################################################################################################################################
+                                                  
+                                    block2=0
+                                    
+                                    Spinh=0              
+                                    block2=0
+                              
+                                    e4=""
+                                    e4a=""
+                                    e4b=""
+                                    block2=0
+                                    sda5=""
+                                     
+                                    sda2=sda17
+                                   
+
+                                    if i==1:
+                                        wer=""
+                                        wer=sda6
+                                        sda4=""
+                                        szx=""
+                                        
+                                        Circle_times2=Circle_times2+1
+
+                                        lenf9=len(sda17)
+                                        #print(Circle_times2)
+                                        
+                                        
+                                        if  Circle_times2==1:
+                                            #print(lenf6-1)
+
+                                            
+                                     
+
+                                            n = int(sda17, 2)
+                                            qqwslenf=len(sda17)
+                                            qqwslenf=(qqwslenf//8)*2
+                                            qqwslenf=str(qqwslenf)
+                                            qqwslenf="%0"+qqwslenf+"x"
+                                            jl=binascii.unhexlify(qqwslenf % n)
+                                            sssssw=len(jl)
+
+                                            szxzzza=""
+                                            szxzs=""
+                                            sda2=sda6
+                                              
+                                            f2.write(jl)
+                                            x2 = time()
+                                            x3=x2-x
+                                            xs=float(x3)
+
+                                            Speed=0
+
+                                            if x3!=0:
+
+                                                   Speed=(lenf7//xs)#B/s
+                                                   print(Speed)
+                                                   print("B/s")
+
+                                            if x3==0:
+                                                   print("FAST")
+
+                                            return print(x3)
+
+
 
 
 
@@ -1944,3 +2454,6 @@ print(xwc2)
 
 xw=d.cryptograpy_compression4()
 print(xw)
+
+xw4=d.cryptograpy_compression5()
+print(xw4)
