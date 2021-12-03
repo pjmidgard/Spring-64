@@ -118,7 +118,7 @@ class compression:
 
 
                             
-                        if namezD>99:
+                        if namezD>20:
                             raise SystemExit
 
        
@@ -165,8 +165,8 @@ class compression:
                             
                                 blockDR=500
 
-                        if namezD>=17 and namezD<=99:
-                                    blockDR=(8*1024*1024)//990
+                        if namezD>=17 and namezD<=20:
+                                    blockDR=100000
                    
 
                        
@@ -632,7 +632,7 @@ class compression:
 
                         namezD = int(input("Please, enter Deep? "))
 
-                        if namezD>99:
+                        if namezD>20:
                             raise SystemExit
 
                         if namezD==27:
@@ -762,8 +762,8 @@ class compression:
                             
                                 blockDR=500
 
-                        if namezD>=17 and namezD<=99:
-                                    blockDR=(8*1024*1024)//990
+                        if namezD>=17 and namezD<=20:
+                                    blockDR=100000
                    
 
 
