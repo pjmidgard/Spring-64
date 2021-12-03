@@ -571,11 +571,7 @@ class compression:
                                             
                                             #print(cvz)
                                             cvz2=cvz
-                                            cvz2=float(cvz2)
-                                            cvz=float(cvz)
-                                            cvz5=float(cvz5)
-                                            cvz3=float(cvz3)
-                                            virationc=float(virationc)
+                                          
                                             while cvz2!=0:
                                                 
                                                 cvz2=cvz//virationc
@@ -1000,31 +996,6 @@ class compression:
                                 h=h+1  
                             av=bin(aqwq)
 
-                            takebit=qwaw
-                            takebitdw=int(takebit, 2)
-                            
-                            if takebitdw==0:
-                                            
-                                            wer="01111111"+sda
-                                            lenf=len(wer)
-                                      
-                                            lenf=len(szx)                      
-                                            szx=""        
-                                            wer="0b"+wer
-                                            n = int(wer, 2)
-                                            qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf//8)*2
-                                            qqwslenf=str(qqwslenf)
-                                            qqwslenf="%0"+qqwslenf+"x"
-                                            jl=binascii.unhexlify(qqwslenf % n)
-                                            sssssw=len(jl)
-                                            with open(namea, "ab") as f2ww:             
-                                                f2ww.write(jl)
-                                                
-                                                x2 = time()
-                                                x3 = x2-x
-                                                return print(x3)
-
                             
                             if a<=block and aqwer==bitc:
                                 aqwer=0
@@ -1167,12 +1138,7 @@ class compression:
                                     ghjd=0
                                     cvz=0
                                     
-                                    ghj=float(ghj)     
-                                    varitionc=float(varitionc)       
-                                    ghjd=float(ghjd)
-                                    bnkw=float(ghj)
-                                    cvz=float(cvz)
-                                                             
+                                           
                            
                                     for p in range(blockw+1):
                                         
@@ -1220,11 +1186,39 @@ class compression:
                                                         return print(x3)
                                                     
                                     szxw2=""
+                                    
+                                    takebit=qwaw
+                                    takebitdw=int(takebit, 2)
+                            
+                                    if takebitdw==0:
+                                            
+                                            wer="01111111"+sda
+                                            lenf=len(wer)
+                                      
+                                            lenf=len(szx)                      
+                                            szx=""        
+                                            wer="0b"+wer
+                                            n = int(wer, 2)
+                                            qqwslenf=len(wer)
+                                            qqwslenf=(qqwslenf//8)*2
+                                            qqwslenf=str(qqwslenf)
+                                            qqwslenf="%0"+qqwslenf+"x"
+                                            jl=binascii.unhexlify(qqwslenf % n)
+                                            sssssw=len(jl)
+                                            with open(namea, "ab") as f2ww:             
+                                                f2ww.write(jl)
+                                                
+                                                x2 = time()
+                                                x3 = x2-x
+                                                return print(x3)
+
                                    
                                     szxw3=bin(cvz)[2:]
                                     lenf=len(szxw3)
 
                                     lenf=len(szxw3)
+
+                                    
                                     
                                    
                                     if lenf>blockD:
