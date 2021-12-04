@@ -329,10 +329,10 @@ class compression:
                      
                                             
                                 blockD=(blockDR*namezD)
-                                blockDE=(blockDR*namezD)-1
+                                blockDE=(blockDR*namezD)-2
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
-                                blocky=(blockDR*namezD)-1
+                                blocky=(blockDR*namezD)-2
                                 block=blockDR
                                 blockw=block-1
                                 blockw1=2**namezD
@@ -833,7 +833,7 @@ class compression:
 
                         
                         
-                        blockD=(blockDR*namezD)-1
+                        blockD=(blockDR*namezD)-2
                         block=blockDR
                         blockw=block-1
                         blockw1=2**namezD
