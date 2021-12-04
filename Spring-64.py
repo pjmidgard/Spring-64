@@ -72,7 +72,7 @@ lenf=0
 name=""
 szx=""
 wer=""
-namez = input("c,c2,c3: compress or e,u2,e3: extract? ")
+namez = input("c,c2: compress or e,u2: extract? ")
 
 f = open("PI_10M.txt", "r")
 PI=f.read()
@@ -117,12 +117,81 @@ class compression:
                             nameas=nameas[0:nac-10]
 
 
-                            
-                        if namezD>20:
-                            raise SystemExit
+                        if namezD==32:
 
-       
-                        if namezD==16:
+                                blockDR=200010
+
+                        
+                        elif namezD==31:
+
+                                blockDR=180010
+
+                        elif namezD==30:
+
+                                blockDR=170010
+                                
+                        elif namezD==29:
+
+                                blockDR=160010
+                                
+                        elif namezD==28:
+
+                                blockDR=150010
+
+
+                        elif namezD==27:
+
+                                blockDR=140010
+
+
+                        elif namezD==26:
+
+                                blockDR=130010
+
+
+                        elif namezD==25:
+
+                                blockDR=120010
+
+                        elif namezD==24:
+
+                                blockDR=105010
+
+
+                        elif namezD==23:
+
+                                blockDR=104010
+
+
+
+                        elif namezD==22:
+
+                                blockDR=103010
+
+
+                        elif namezD==21:
+
+                                blockDR=102010
+                            
+
+                        elif namezD==20:
+
+                                blockDR=101010
+                         
+                        elif namezD==19:
+
+                                blockDR=100010
+
+                     
+                        elif namezD==18:
+
+                                blockDR=80010
+
+                        elif namezD==17:
+
+                                blockDR=79010
+
+                        elif namezD==16:
 
                                 blockDR=78010
 
@@ -164,12 +233,6 @@ class compression:
                         elif namezD==7:
                             
                                 blockDR=500
-
-                        if namezD>=17 and namezD<=20:
-                                    blockDR=300000
-                   
-
-                       
                         #print(namezD)
                         
 
@@ -235,8 +298,6 @@ class compression:
                         qtqweqw=""
                         numberschangenotexist = []
                         numbers = []
-
-                        
                        
             
                         with open(nameas, "w") as f4:
@@ -325,14 +386,15 @@ class compression:
                                 rr12=0
                                 wers=""
                                 countraz=0
-          
-                     
-                                            
+
+
+                                
+                                    
                                 blockD=(blockDR*namezD)
-                                blockDE=(blockDR*namezD)-2
+                                blockDE=(blockDR*namezD)-1
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
-                                blocky=(blockDR*namezD)-2
+                                blocky=(blockDR*namezD)-1
                                 block=blockDR
                                 blockw=block-1
                                 blockw1=2**namezD
@@ -360,7 +422,7 @@ class compression:
                                             n = int(wer, 2)
                                     
                                             qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf//8)*2
+                                            qqwslenf=(qqwslenf/8)*2
                                             qqwslenf=str(qqwslenf)
                                             qqwslenf="%0"+qqwslenf+"x"
                                                 
@@ -537,17 +599,27 @@ class compression:
                                             
                                             #print(cvz)
                                             cvz2=cvz
-                                          
                                             while cvz2!=0:
                                                 
                                                 cvz2=cvz//virationc
                                                 
                                                 cvz3=cvz2*virationc
-                                                
+                                                cvz4=str(cvz2)
                                                 
                                                 cvz5=cvz-cvz3
                                                 cvz=cvz2
-                                      
+                                                #print(cvz5)
+                                                
+                                               
+                                              
+                                                szxw2=szxw2+cvz4
+                                                
+                                                
+                                                        
+                                                        
+                                                        
+                                                #print(cvz5)     
+                                                
                                                 szxw3=bin(cvz5)[2:]
                                                 lenf=len(szxw3)
 
@@ -632,9 +704,6 @@ class compression:
 
                         namezD = int(input("Please, enter Deep? "))
 
-                        if namezD>20:
-                            raise SystemExit
-
                         if namezD==27:
                             namezD=32
 
@@ -717,9 +786,83 @@ class compression:
                         if namezD==1:
                             namezD=7
 
+                       
+                            
+                        if namezD==32:
+
+                                blockDR=200010
 
                         
-                        if namezD==16:
+                        elif namezD==31:
+
+                                blockDR=180010
+
+                        elif namezD==30:
+
+                                blockDR=170010
+                                
+                        elif namezD==29:
+
+                                blockDR=160010
+                                
+                        elif namezD==28:
+
+                                blockDR=150010
+
+
+                        elif namezD==27:
+
+                                blockDR=140010
+
+
+                        elif namezD==26:
+
+                                blockDR=130010
+
+
+                        elif namezD==25:
+
+                                blockDR=120010
+
+                        elif namezD==24:
+
+                                blockDR=105010
+
+
+                        elif namezD==23:
+
+                                blockDR=104010
+
+
+
+                        elif namezD==22:
+
+                                blockDR=103010
+
+
+                        elif namezD==21:
+
+                                blockDR=102010
+                            
+
+                        elif namezD==20:
+
+                                blockDR=101010
+                         
+                        elif namezD==19:
+
+                                blockDR=100010
+
+                     
+                        elif namezD==18:
+
+                                blockDR=80010
+
+                        elif namezD==17:
+
+                                blockDR=79010
+
+                        elif namezD==16:
 
                                 blockDR=78010
 
@@ -762,10 +905,13 @@ class compression:
                             
                                 blockDR=500
 
-                        if namezD>=17 and namezD<=20:
-                                    blockDR=300000
-                   
 
+                        else:
+                            raise SystemExit
+                        
+                      
+                      
+                            
 
                         x=0
                         x1=0
@@ -832,8 +978,9 @@ class compression:
                         numbers = []
 
                         
+                            
                         
-                        blockD=(blockDR*namezD)-2
+                        blockD=(blockDR*namezD)-1
                         block=blockDR
                         blockw=block-1
                         blockw1=2**namezD
@@ -928,8 +1075,6 @@ class compression:
                                 a=a+1
                                 h=h+1  
                             av=bin(aqwq)
-
-                            
                             if a<=block and aqwer==bitc:
                                 aqwer=0
                                 m[aqwq] = aqwq
@@ -942,8 +1087,6 @@ class compression:
                                         k.append(p)     
                                     p=p+1
                                 lenfg=len(k)
-
-                                
                                 
                                 if lenfg==0:
                                     xx=0
@@ -993,7 +1136,7 @@ class compression:
                                         wer="0b"+wer
                                         n = int(wer, 2)
                                         qqwslenf=len(wer)
-                                        qqwslenf=(qqwslenf//8)*2
+                                        qqwslenf=(qqwslenf/8)*2
                                         qqwslenf=str(qqwslenf)
                                         qqwslenf="%0"+qqwslenf+"x"
                                         jl=binascii.unhexlify(qqwslenf % n)
@@ -1041,7 +1184,7 @@ class compression:
                                             wer="0b"+wer
                                             n = int(wer, 2)
                                             qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf//8)*2
+                                            qqwslenf=(qqwslenf/8)*2
                                             qqwslenf=str(qqwslenf)
                                             qqwslenf="%0"+qqwslenf+"x"
                                             jl=binascii.unhexlify(qqwslenf % n)
@@ -1070,9 +1213,6 @@ class compression:
 
                                     ghjd=0
                                     cvz=0
-                                    
-                                           
-                           
                                     for p in range(blockw+1):
                                         
                                         if virationc!=byteb:
@@ -1085,14 +1225,16 @@ class compression:
                                             
                                                 bnkd=1        
                                             
+                                             
+                                             
+                                                    
+                                            
                                                 ghjd=ghj*(virationc**bnkw)
-                             
-                                    
+                                              
+                                          
                                                 bnkw=bnkw-1
                                             
                                                 cvz=cvz+ghjd
-
-                                        
                                                 
                                                 
                                         if virationc==byteb:
@@ -1106,7 +1248,7 @@ class compression:
                                                     wer="0b"+wer
                                                     n = int(wer, 2)
                                                     qqwslenf=len(wer)
-                                                    qqwslenf=(qqwslenf//8)*2
+                                                    qqwslenf=(qqwslenf/8)*2
                                                     qqwslenf=str(qqwslenf)
                                                     qqwslenf="%0"+qqwslenf+"x"
                                                     jl=binascii.unhexlify(qqwslenf % n)
@@ -1118,41 +1260,29 @@ class compression:
                                                         x3 = x2-x
                                                         return print(x3)
                                                     
-                                    szxw2=""
-                                    
-                                    takebit=qwaw
-                                    takebitdw=int(takebit, 2)
-                            
-                                    if takebitdw==0:
-                                            
-                                            wer="01111111"+sda
-                                            lenf=len(wer)
-                                      
-                                            lenf=len(szx)                      
-                                            szx=""        
-                                            wer="0b"+wer
-                                            n = int(wer, 2)
-                                            qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf//8)*2
-                                            qqwslenf=str(qqwslenf)
-                                            qqwslenf="%0"+qqwslenf+"x"
-                                            jl=binascii.unhexlify(qqwslenf % n)
-                                            sssssw=len(jl)
-                                            with open(namea, "ab") as f2ww:             
-                                                f2ww.write(jl)
-                                                
-                                                x2 = time()
-                                                x3 = x2-x
-                                                return print(x3)
 
-                                   
+                                                   
+                                       
+                                                
+
+                                                
+                                                
+                                                
+
+                                                
+                                    
+                                        
+                                        
+                                    szxw2=""
+                                    cvz2=cvz
+                                    cvz5=cvz
                                     szxw3=bin(cvz)[2:]
                                     lenf=len(szxw3)
-
+                                    
+                                    
                                     lenf=len(szxw3)
-
-                                    
-                                    
+                                    #print(lenf)
+                                    #print(blockD)
                                    
                                     if lenf>blockD:
                                             wer="01111111"+sda
@@ -1163,7 +1293,7 @@ class compression:
                                             wer="0b"+wer
                                             n = int(wer, 2)
                                             qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf//8)*2
+                                            qqwslenf=(qqwslenf/8)*2
                                             qqwslenf=str(qqwslenf)
                                             qqwslenf="%0"+qqwslenf+"x"
                                             jl=binascii.unhexlify(qqwslenf % n)
@@ -1377,7 +1507,7 @@ class compression:
                                     n = int(sda2, 2)
                                 
                                     qqwslenf=len(sda2)
-                                    qqwslenf=(qqwslenf//8)*2
+                                    qqwslenf=(qqwslenf/8)*2
                                     qqwslenf=str(qqwslenf)
                                     qqwslenf="%0"+qqwslenf+"x"
                              
@@ -1694,7 +1824,7 @@ class compression:
                                        
                                          n = int(sda17, 2)
                                          qqwslenf=len(sda17)
-                                         qqwslenf=(qqwslenf//8)*2
+                                         qqwslenf=(qqwslenf/8)*2
                                          qqwslenf=str(qqwslenf)
                                          qqwslenf="%0"+qqwslenf+"x"
                                          jl=binascii.unhexlify(qqwslenf % n)
@@ -1929,8 +2059,6 @@ class compression:
                                                    print("FAST")
 
                                             return print(x3)
-
-
 
 
 
