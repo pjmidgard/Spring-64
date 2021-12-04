@@ -2189,7 +2189,7 @@ class compression:
 
                                     while ei<lenf6F:
    
-                                           sda10=sda3[ei:ei+2]
+                                           sda10=sda3[ei:ei+2][::-1]
                                            sda11=sda3[ei+2:ei+4]
                                            sda12=sda3[ei+4:ei+6]
                                            sda13=sda3[ei+6:ei+8]
@@ -2289,7 +2289,7 @@ class compression:
 
                                     while ei<lenf6F:
 
-                                           sda10=sda3[ei:ei+2]
+                                           sda10=sda3[ei:ei+2][::-1]
                                            sda11=sda3[ei+2:ei+4]
                                            sda12=sda3[ei+4:ei+6]
                                            sda13=sda3[ei+6:ei+8]
