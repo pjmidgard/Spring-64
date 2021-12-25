@@ -74,8 +74,8 @@ szx=""
 wer=""
 namez = input("c,c2: compress or e,u2: extract? ")
 
-f = open("PI_10M.txt", "r")
-PI=f.read()
+#f = open("PI_10M.txt", "r")
+#PI=f.read()
 
 
 #@Author Jurijus pacalovas
@@ -1125,6 +1125,7 @@ class compression:
                                    
                                     acvb=lenfg-1
                                     notexist=k[0]
+                                    del k[:]   
                                     xx=1
                                     #print(notexist)
                                     
